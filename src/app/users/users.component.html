@@ -1,0 +1,6 @@
+<h2>List users</h2>
+<div *ngIf="selectedUser">Selected user: {{selectedUser.name}}</div>
+<app-users-table 
+    (selectUser)="onSelectUser($event)"
+    [users]="users">
+</app-users-table>
